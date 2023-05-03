@@ -1,6 +1,6 @@
 {
   "name": "@kaolho/template",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Introducing to a new tool to initialize typescript projects from templates, it's just install, select the template and install dependencies",
   "main": "build/index.js",
   "scripts": {
