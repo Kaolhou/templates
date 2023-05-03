@@ -1,5 +1,7 @@
 .eslintrc.cjs
 .prettierrc
 nodemon.json
-*.md
+README.md
 .vscode
+copy.sh
+src

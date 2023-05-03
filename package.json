@@ -3,10 +3,6 @@
   "version": "1.0.1",
   "description": "",
   "main": "build/index.js",
-  "files": [
-    "template/**/*",
-    "build/**/*"
-  ],
   "scripts": {
     "dev": "nodemon src/index.ts",
     "start": "node build/index.js",
