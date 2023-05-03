@@ -1,7 +1,7 @@
 {
   "name": "@kaolho/template",
   "version": "1.0.3",
-  "description": "",
+  "description": "Introducing to a new tool to initialize typescript projects from templates, it's just install, select the template and install dependencies",
   "main": "build/index.js",
   "scripts": {
     "dev": "nodemon src/index.ts",
@@ -11,7 +11,11 @@
   },
   "type": "module",
   "keywords": [],
-  "author": "",
+  "author": {
+    "email": "andre.mendes.roca65@gmail.com",
+    "name": "André Mendes da Rocha",
+    "url": "https://kaolhou.dev"
+  },
   "bin": {
     "@kaolho/template": "build/index.js"
   },
@@ -20,6 +24,10 @@
     "ejs": "^3.1.9",
     "inquirer": "^9.2.0",
     "typescript": "^5.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kaolhou/templates"
   },
   "devDependencies": {
     "@types/ejs": "^3.1.2",
