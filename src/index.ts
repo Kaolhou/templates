@@ -13,9 +13,10 @@ export interface CliOptions {
   tartgetPath: string;
 }
 
-const SKIP_FILES = ["node_modules", ".template.json"];
-const CHOICES = fs.readdirSync(path.resolve(process.cwd(), "src", "templates"));
 const CURR_DIR = process.cwd();
+const WORK_DIR = path.resolve(import.meta.url.split("file:///")[1], "../..");
+const SKIP_FILES = ["node_modules", ".template.json"];
+const CHOICES = fs.readdirSync(path.resolve(WORK_DIR, "templates"));
 const QUESTIONS = [
   {
     name: "template",
@@ -62,7 +63,7 @@ function createProject(projectPath: string) {
 inquirer.prompt(QUESTIONS).then((answers) => {
   const projectChoice = answers["template"];
   const projectName = answers["name"];
-  const templatePath = path.resolve(process.cwd(), "src", "templates", projectChoice);
+  const templatePath = path.resolve(WORK_DIR, "templates", projectChoice);
   const tartgetPath = path.join(CURR_DIR, projectName);
 
   if (!createProject(tartgetPath)) return;

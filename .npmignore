@@ -1,0 +1,5 @@
+.eslintrc.cjs
+.prettierrc
+nodemon.json
+*.md
+.vscode

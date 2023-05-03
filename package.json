@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "build/index.js",
+  "files": [
+    "template/**/*",
+    "build/**/*"
+  ],
   "scripts": {
     "dev": "nodemon src/index.ts",
     "start": "node build/index.js",
-    "build": "tsc",
+    "build": "tsc && copy.sh",
     "lint": "eslint"
   },
   "type": "module",
