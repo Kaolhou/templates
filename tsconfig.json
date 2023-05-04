@@ -9,7 +9,6 @@
     "skipLibCheck": true,
     "outDir": "build",
     "newLine": "crlf",
-    "types": ["node"],
     "declaration": true
   },
   "include": ["src/**/**.ts"],

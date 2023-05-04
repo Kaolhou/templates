@@ -1,7 +1,0 @@
-.eslintrc.cjs
-.prettierrc
-nodemon.json
-README.md
-.vscode
-copy.sh
-src
